@@ -10,9 +10,6 @@ my $builder = Module::Build->new(
     build_requires => {
         'Test::More' => 0,
     },
-    requires       => {
-    	'List::MoreUtils' => 0,
-    },
     meta_merge => {
         resources       => {
             bugtracker  => 'http://rt.cpan.org/NoAuth/Bugs.html?Dist=Sys-Sendfile',
@@ -20,7 +17,7 @@ my $builder = Module::Build->new(
         keywords        => [ 'sendfile', 'zero-copy' ],
     },
     add_to_cleanup      => [ 'Sys-Sendfile-*' ],
-    create_makefile_pl  => 'traditional',
+    create_makefile_pl  => 'passthrough',
     sign                => 1,
 );
 
