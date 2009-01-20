@@ -8,6 +8,7 @@ my $builder = Module::Build->new(
     dist_author         => 'Leon Timmermans <leont@cpan.org>',
     dist_version_from   => 'lib/Sys/Sendfile.pm',
     build_requires => {
+		'ExtUtils::CBuilder' => 0,
         'Test::More' => 0,
     },
     meta_merge => {

@@ -6,9 +6,13 @@
  *
  */
 
+#if defined (__SVR4) && defined (__sun)
+#define solaris
+#endif
+
 #if defined linux || defined solaris
 #include <sys/sendfile.h>
-#elif defined freebsd
+#elif defined __FreeBSD__
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <sys/uio.h>
@@ -22,7 +26,7 @@
 
 MODULE = Sys::Sendfile				PACKAGE = Sys::Sendfile
 
-#if defined linux || defined solaris || defined freebsd
+#if defined linux || defined solaris || defined __FreeBSD__
 
 SV*
 sendfile(out, in, count = 0, offset = &PL_sv_undef)
@@ -46,7 +50,7 @@ sendfile(out, in, count = 0, offset = &PL_sv_undef)
 			XSRETURN_EMPTY;
 		else
 			XSRETURN_IV(success);
-#elif defined freebsd
+#elif defined __FreeBSD__
 	{
 		off_t bytes;
 		int ret = sendfile(out, in, real_offset, count, NULL, &bytes, 0);
