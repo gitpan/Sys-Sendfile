@@ -14,15 +14,15 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 cca304507930f33fdc4ef2f5df443c64f9681156 Build.PL
+SHA1 d5ff6bde2db6a244d9e044a807f4aaf1a8df87a9 Build.PL
 SHA1 8dde5a9e5296ee723627854fa52d1cb0a593eae9 COPYING
-SHA1 c9e95a01b795a33b1d0bef7b7fe4ee21a278c6ed Changes
+SHA1 bf5c6c06dd6020aaaf8bc0a5ab733bdee8fe2b48 Changes
 SHA1 83bee710df4358e9dbe5be755f8a097a2b91aad0 MANIFEST
-SHA1 2566dfdb2b139e487ae92990d4f60edcb12f028e META.yml
+SHA1 752ea06ec0f08c7fa019c96e736482cfcdaf6af1 META.yml
 SHA1 f44a610f611cc4333f9a9b52873bc5a35fb7ffb3 Makefile.PL
 SHA1 e70e232abaa4f6528efb35f88ece03c921ac5e25 README
-SHA1 858ca9b57efbd613a2ca49b0a35a36c5295d80db lib/Sys/Sendfile.pm
-SHA1 2f2dd999273c4b044be6e8736aa045bd4138f017 lib/Sys/Sendfile.xs
+SHA1 c5446761e870849f9e2a9f34ba8b2f25881eb0a7 lib/Sys/Sendfile.pm
+SHA1 1b14ccdc92806140dd806befa780dbf4605d50e9 lib/Sys/Sendfile.xs
 SHA1 759679bedb64b6dad53abc08db2eb3c5b6f1b686 t/00-load.t
 SHA1 0625e692cac85f1dcde06fdc37a44b2688e7a5d5 t/10-basics.t
 SHA1 bd30112c8ee27cac4e7a7ef7653c252be84c2e1f t/boilerplate.t
@@ -31,7 +31,7 @@ SHA1 640935336dc1123c0069bcf5432bcaedc2cf22d3 t/pod.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.9 (GNU/Linux)
 
-iEYEARECAAYFAkl2WugACgkQTd+EWiaICwqIMwCeN4KgHJ2RpzE8v1wvN4R8MT39
-lYsAn0VuBfQvraUDBeCQsjesKWvmMdgc
-=2ey2
+iEYEARECAAYFAkl8kgUACgkQTd+EWiaICwoQ7gCgnWjfjZmDpd6ii4Vwd0or5O8Z
+ncUAoIR4g9MFI58D2NRoMIVu0RAuz/Kg
+=19wT
 -----END PGP SIGNATURE-----

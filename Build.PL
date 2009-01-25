@@ -22,4 +22,6 @@ my $builder = Module::Build->new(
     sign                => 1,
 );
 
+$builder->extra_linker_flags('-lsendfile') if $^O eq 'solaris';
+
 $builder->create_build_script();

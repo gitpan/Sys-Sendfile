@@ -1,5 +1,9 @@
 Revision history for Sys-Sendfile
 
+0.04    2009-01-25
+        Fixed linking on Solaris
+        Fixed order of arguments for FreeBSD
+
 0.03    2009-01-20
         Fixed code portability
         More fixes to Build.PL

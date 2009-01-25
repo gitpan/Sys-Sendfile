@@ -53,7 +53,7 @@ sendfile(out, in, count = 0, offset = &PL_sv_undef)
 #elif defined __FreeBSD__
 	{
 		off_t bytes;
-		int ret = sendfile(out, in, real_offset, count, NULL, &bytes, 0);
+		int ret = sendfile(in, out, real_offset, count, NULL, &bytes, 0);
 		if (ret == -1)
 			XSRETURN_EMPTY;
 		else
