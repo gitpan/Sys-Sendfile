@@ -1,5 +1,8 @@
 Revision history for Sys-Sendfile
 
+0.06    2009-01-29
+		Fixed typo on Solaris
+
 0.05    2009-01-28
         Fixed compilation using the Intel compiler
         Made the error message for unsupported OSs work on non-GCC compilers

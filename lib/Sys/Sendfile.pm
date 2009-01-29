@@ -8,7 +8,7 @@ package Sys::Sendfile;
 use strict;
 use warnings;
 
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 
 use base qw/Exporter DynaLoader/;
 
@@ -26,7 +26,7 @@ Sys::Sendfile - Zero-copy data transfer
 
 =head1 VERSION
 
-Version 0.05
+Version 0.06
 
 =cut
 

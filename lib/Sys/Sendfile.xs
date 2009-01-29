@@ -45,7 +45,7 @@ sendfile(out, in, count = 0, offset = &PL_sv_undef)
 	PROTOTYPE: **@
 	CODE:
 	off_t real_offset = SvOK(offset) ? SvUV(offset) : lseek(in, 0, SEEK_CUR);
-#if defined linux || defined solaris
+#if defined linux || defined __solaris__
 	if (count == 0) {
 		struct stat info;
 		if (fstat(in, &info) == -1) 
