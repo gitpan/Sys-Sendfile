@@ -1,5 +1,9 @@
 Revision history for Sys-Sendfile
 
+0.05    2009-01-28
+        Fixed compilation using the Intel compiler
+        Made the error message for unsupported OSs work on non-GCC compilers
+
 0.04    2009-01-25
         Fixed linking on Solaris
         Fixed order of arguments for FreeBSD

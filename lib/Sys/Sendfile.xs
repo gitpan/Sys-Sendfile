@@ -7,7 +7,7 @@
  */
 
 #if defined (__SVR4) && defined (__sun)
-#define solaris
+#define __solaris__
 #endif
 
 #if defined linux || defined solaris
@@ -24,9 +24,17 @@
 #include "perl.h"
 #include "XSUB.h"
 
-MODULE = Sys::Sendfile				PACKAGE = Sys::Sendfile
+#if !defined __linux__ && !defined __solaris__ && !defined __FreeBSD__
 
-#if defined linux || defined solaris || defined __FreeBSD__
+#ifdef __GNUC__
+#error Your operating system appears to be unsupported
+#else
+Your operating system appears to be unsupported;
+#endif
+
+#endif
+
+MODULE = Sys::Sendfile				PACKAGE = Sys::Sendfile
 
 SV*
 sendfile(out, in, count = 0, offset = &PL_sv_undef)
@@ -60,9 +68,3 @@ sendfile(out, in, count = 0, offset = &PL_sv_undef)
 			XSRETURN_IV(bytes);
 #endif
 	}
-
-#else
-
-#error Your operating system appears to be unsupported
-
-#endif

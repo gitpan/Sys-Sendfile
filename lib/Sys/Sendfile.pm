@@ -1,4 +1,5 @@
 package Sys::Sendfile;
+
 # This software is copyright (c) 2008, 2009 by Leon Timmermans <leont@cpan.org>.
 #
 # This is free software; you can redistribute it and/or modify it under
@@ -7,7 +8,7 @@ package Sys::Sendfile;
 use strict;
 use warnings;
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 use base qw/Exporter DynaLoader/;
 
@@ -25,7 +26,7 @@ Sys::Sendfile - Zero-copy data transfer
 
 =head1 VERSION
 
-Version 0.01
+Version 0.05
 
 =cut
 
