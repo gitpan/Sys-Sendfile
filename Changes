@@ -1,5 +1,9 @@
 Revision history for Sys-Sendfile
 
+0.08    2009-02-04
+        Undid my screwing up during the previous release
+        Skip testing on Solaris for now...
+
 0.07    2009-01-30
         Fixed tests for Solaris
 

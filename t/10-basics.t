@@ -3,14 +3,16 @@
 use strict;
 use warnings;
 use Socket;
-use Test::More tests => 2;
+use Test::More;
 use Sys::Sendfile;
 use Fcntl 'SEEK_SET';
-use Socket 'MSG_DONTWAIT';
+use Socket;
+
+plan($^O eq 'solaris' ? (skip_all => 'can\'t sendfile over socketpair on Solaris, skipping tests for now') : (tests => 2));
 
 alarm 2;
 
-socketpair my ($in), my ($out), AF_UNIX, SOCK_STREAM, PF_UNIX;
+socketpair my ($in), my ($out), AF_UNIX, SOCK_STREAM, PF_UNSPEC or die "Couldn't open socketpair: $!\n";
 
 open my $self, '<', $0 or die "Couldn't open self: $!";
 my $slurped = do { local $/; <$self> };
