@@ -1,5 +1,8 @@
 Revision history for Sys-Sendfile
 
+0.09    2009-09-19
+        Port to macosx, by Kazuho Oku
+
 0.08    2009-02-04
         Undid my screwing up during the previous release
         Skip testing on Solaris for now...

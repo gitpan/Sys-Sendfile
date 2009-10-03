@@ -15,6 +15,7 @@ my $builder = Module::Build->new(
     meta_merge => {
         resources       => {
             bugtracker  => 'http://rt.cpan.org/NoAuth/Bugs.html?Dist=Sys-Sendfile',
+			repository  => 'http://github.com/Leont/sys-sendfile',
         },
         keywords        => [ 'sendfile', 'zero-copy' ],
     },
