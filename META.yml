@@ -1,6 +1,6 @@
 ---
 name: Sys-Sendfile
-version: 0.10
+version: 0.11
 author:
   - 'Leon Timmermans <leont@cpan.org>'
 abstract: Zero-copy data transfer
@@ -17,7 +17,7 @@ build_requires:
 provides:
   Sys::Sendfile:
     file: lib/Sys/Sendfile.pm
-    version: 0.10
+    version: 0.11
 generated_by: Module::Build version 0.33
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
