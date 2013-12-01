@@ -1,14 +1,16 @@
 Build.PL
 Changes
+INSTALL
 LICENSE
-lib/Sys/Sendfile.pm
-lib/Sys/Sendfile.xs
-Makefile.PL
 MANIFEST
+META.json
 META.yml
 README
-t/00-load.t
+dist.ini
+lib/Sys/Sendfile.pm
+lib/Sys/Sendfile.xs
+t/00-compile.t
 t/10-basics.t
-t/pod-coverage.t
-t/pod.t
-SIGNATURE    Added here by Module::Build
+t/release-pod-coverage.t
+t/release-pod-syntax.t
+weaver.ini
